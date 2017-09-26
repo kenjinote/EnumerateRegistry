@@ -129,8 +129,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 				)
 			{
 				QueryKey(hEdit2, hTestKey);
+				RegCloseKey(hTestKey);
 			}
-			RegCloseKey(hTestKey);
 			GlobalFree(lpszText);
 		}
 		break;
